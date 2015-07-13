@@ -13,6 +13,6 @@ angular.module('DoctorConfig', []).constant('DoctorConfig', {
     <link rel="stylesheet" href="scripts/doctor/doctor.css">
 ```
 
-``html
+```html
   <div doctor-directive></div>
 ```
