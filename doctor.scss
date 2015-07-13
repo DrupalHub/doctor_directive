@@ -1,0 +1,84 @@
+/* Structure */
+
+json-tree {
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+    &:before, &:after {
+      box-sizing: border-box;
+    }
+  }
+  .key {
+    vertical-align: middle;
+  }
+  .expandable {
+    position: relative;
+    &::before {
+      pointer-events: none;
+      cursor: pointer;
+    }
+    > .key {
+      cursor: pointer;
+    }
+  }
+  .branch-preview {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li, ul {
+    list-style: none;
+  }
+  li {
+    line-height: 1.5em;
+  }
+  .key {
+    color: #D02828;
+    padding: 5px 10px 5px 15px;
+    &::after {
+      content: ':';
+    }
+  }
+  json-node.expandable {
+    &::before {
+      content: '\25b6';
+      position: absolute;
+      left: 0px;
+      font-size: 10px;
+      transition: transform .1s ease;
+    }
+    &.expanded::before {
+      transform: rotate(90deg);
+    }
+  }
+  .leaf-value {
+    word-break: break-all;
+  }
+  .branch-preview {
+    word-break: break-all;
+    overflow: hidden;
+    font-style: italic;
+    max-width: 40%;
+    height: 1.5em;
+    opacity: .7;
+  }
+}
+
+/* Looks */
+
+.doctor-toolbar {
+
+  table {
+    width: 100%;
+
+    thead {
+
+      td {
+        border-bottom: #B3B3B3 solid 1px;
+        width: 50%;
+      }
+    }
+  }
+}

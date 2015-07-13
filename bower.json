@@ -1,0 +1,28 @@
+{
+  "name": "doctor",
+  "main": "doctor.js",
+  "version": "0.0.0",
+  "authors": [
+    "Roy Segall <roy.segall@gizra.com>"
+  ],
+  "dependencies": {
+    "angular": "^1.3.0",
+    "bootstrap-sass-official": "^3.2.0",
+    "pusher-angular": "~0.1.5",
+    "pusher": "~2.2.4",
+    "angular-json-tree": "*"
+  },
+  "description": "Show doctor entries from your Drupal site",
+  "keywords": [
+    "doctor",
+    "drupal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
